@@ -1,5 +1,5 @@
 {
-  "name": "darkaonline/swagger-lume",
+  "name": "imikemiller/swagger-lume",
   "description": "Swagger integration to Lumen 5",
   "keywords": ["lumen", "laravel", "swagger"],
   "license": "MIT",
@@ -7,6 +7,10 @@
     {
       "name": "Darius Matulionis",
       "email": "darius@matulionis.lt"
+    },
+    {
+      "name": "Mike Miller",
+      "email": "mike@mikemiller.uk"
     }
   ],
   "require": {
