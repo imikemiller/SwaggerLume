@@ -42,7 +42,7 @@
   "prefer-stable": true,
   "scripts":{
     "post-package-update":[
-      "git submodule update --merge --recursive"
+      "git submodule update --init --recursive"
     ]
   }
 }
