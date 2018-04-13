@@ -41,7 +41,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts":{
-    "post-update-cmd":[
+    "post-autoload-dump":[
       "git submodule update --init --recursive"
     ]
   }
