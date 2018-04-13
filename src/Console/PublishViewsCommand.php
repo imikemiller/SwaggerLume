@@ -38,22 +38,22 @@ class PublishViewsCommand extends Command
 
         (new Publisher($this))->publishDirectory(
             __DIR__.'/../../resources/dist/css',
-            public_path('css')
+            public_path('swagger-ui-assets/css')
         );
 
         (new Publisher($this))->publishDirectory(
             __DIR__.'/../../resources/dist/images',
-            public_path('images')
+            public_path('swagger-ui-assets/images')
         );
 
         (new Publisher($this))->publishDirectory(
             __DIR__.'/../../resources/dist/lib',
-            public_path('lib')
+            public_path('swagger-ui-assets/lib')
         );
 
         (new Publisher($this))->publishDirectory(
             __DIR__.'/../../resources/dist/fonts',
-            public_path('fonts')
+            public_path('swagger-ui-assets/fonts')
         );
     }
 }
