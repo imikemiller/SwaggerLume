@@ -39,5 +39,10 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "scripts":{
+    "post-package-update":[
+      "git submodule update --merge --recursive"
+    ]
+  }
 }
