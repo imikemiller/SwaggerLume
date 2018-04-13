@@ -60,3 +60,17 @@ if (! function_exists('swagger_lume_asset')) {
         return route('swagger-lume.asset', ['asset' => $asset, 'v' => md5($file)], app('request')->secure());
     }
 }
+
+if (!function_exists('asset')) {
+
+    /**
+     * @param $asset
+     * @return string
+     */
+    function asset($asset) {
+
+        $path = base_path('vendor/swagger-api/swagger-ui/dist/');
+        $file = realpath($path.$asset);
+        return route('swagger-lume.asset', ['asset' => $asset, 'v' => md5($file)], app('request')->secure());
+    }
+}
