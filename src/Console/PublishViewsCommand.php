@@ -35,5 +35,25 @@ class PublishViewsCommand extends Command
             config('swagger-lume.paths.views'),
             'index.blade.php'
         );
+
+        (new Publisher($this))->publishDirectory(
+            __DIR__.'/../../swagger-ui/dist/css',
+            public_path('css')
+        );
+
+        (new Publisher($this))->publishDirectory(
+            __DIR__.'/../../swagger-ui/dist/images',
+            public_path('images')
+        );
+
+        (new Publisher($this))->publishDirectory(
+            __DIR__.'/../../swagger-ui/dist/lib',
+            public_path('lib')
+        );
+
+        (new Publisher($this))->publishDirectory(
+            __DIR__.'/../../swagger-ui/dist/fonts',
+            public_path('fonts')
+        );
     }
 }
