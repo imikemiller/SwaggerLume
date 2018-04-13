@@ -29,7 +29,7 @@ class PublishViewsCommand extends Command
     public function handle()
     {
         $this->info('Publishing view files');
-        exec('git submodule update --init --recursive');
+        
         (new Publisher($this))->publishFile(
             realpath(__DIR__.'/../../resources/views/').'/index.blade.php',
             config('swagger-lume.paths.views'),
@@ -37,22 +37,22 @@ class PublishViewsCommand extends Command
         );
 
         (new Publisher($this))->publishDirectory(
-            __DIR__.'/../../swagger-ui/dist/css',
+            __DIR__.'/../../resources/dist/css',
             public_path('css')
         );
 
         (new Publisher($this))->publishDirectory(
-            __DIR__.'/../../swagger-ui/dist/images',
+            __DIR__.'/../../resources/dist/images',
             public_path('images')
         );
 
         (new Publisher($this))->publishDirectory(
-            __DIR__.'/../../swagger-ui/dist/lib',
+            __DIR__.'/../../resources/dist/lib',
             public_path('lib')
         );
 
         (new Publisher($this))->publishDirectory(
-            __DIR__.'/../../swagger-ui/dist/fonts',
+            __DIR__.'/../../resources/dist/fonts',
             public_path('fonts')
         );
     }
