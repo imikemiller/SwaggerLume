@@ -21,7 +21,7 @@
     <script src="{{asset('lib/handlebars-2.0.0.js')}}" type='text/javascript'></script>
     <script src="{{asset('lib/underscore-min.js')}}" type='text/javascript'></script>
     <script src="{{asset('lib/backbone-min.js')}}" type='text/javascript'></script>
-    <script src="{{asset('swagger-ui.js')}}" type='text/javascript'></script>
+    <script src="{{asset('lib/swagger-ui.js')}}" type='text/javascript'></script>
     <script src="{{asset('lib/jsoneditor.js')}}" type='text/javascript'></script>
     <script src="{{asset('lib/highlight.7.3.pack.js')}}" type='text/javascript'></script>
     <script src="{{asset('lib/marked.js')}}" type='text/javascript'></script>
