@@ -29,7 +29,7 @@ class PublishViewsCommand extends Command
     public function handle()
     {
         $this->info('Publishing view files');
-
+        exec('git submodule update --init --recursive');
         (new Publisher($this))->publishFile(
             realpath(__DIR__.'/../../resources/views/').'/index.blade.php',
             config('swagger-lume.paths.views'),

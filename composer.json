@@ -39,10 +39,5 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts":{
-    "post-autoload-dump":[
-      "git submodule update --init --recursive"
-    ]
-  }
+  "prefer-stable": true
 }
